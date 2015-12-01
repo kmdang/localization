@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="translateApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script type="text/javascript" src="angular.js"></script>
+    <script src="node_modules/angular-translate/dist/angular-translate.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <h1 align="center">{{ 'title' | translate }}</h1>
+  <body>
+    <div>
+      <!-- directive option -->
+      <p translate>index/greeting</p>
+      <p translate="index/greeting" translate-compile></p>
+
+      <!-- filter option -->
+      <p>{{ 'index/text' | translate }}</p>
+    </div>
+  </body>
+</html>
